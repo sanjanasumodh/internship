@@ -1,0 +1,29 @@
+.block {
+    display: block;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+}
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    width: 120px;
+    height: 60px;
+    margin: 10px;
+    text-align: center;
+}
+.none {
+    display: none;
+}
+.flex {
+    display: flex;
+    background-color: lightgray;
+    padding: 10px;
+    gap: 10px;
+}
+

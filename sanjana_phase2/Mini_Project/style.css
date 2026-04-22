@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: gold;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: gold;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.elengance{
+    background-color: blanchedalmond;
+    background-size: cover;
+    text-align: center;
+    padding: 60px;
+}
+.highlight {
+    text-align: center;
+    padding: 30px;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.card {
+    width: 30%;
+    background-color: bisque;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+form {
+    width: 300px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+form input,
+form textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background: gold;
+    border: none;
+}
+footer {
+    background: #111;
+    color: gold;
+    text-align: center;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+.container {
+flex-direction: column;
+align-items: center;
+}
+.card {
+width: 80%;
+margin-bottom: 20px;
+}
+}
+
