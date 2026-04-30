@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <input type="text" id="user" placeholder="Username"><br>
+  <span id="uErr" style="color:red"></span><br>
+
+  <input type="password" id="pass" placeholder="Password"><br>
+  <span id="pErr" style="color:red"></span><br><br>
+
+  <button type="submit">Login</button>
+</form>
+
+<script>
+let u = document.getElementById("user");
+let p = document.getElementById("pass");
+
+u.oninput = () => {
+  document.getElementById("uErr").textContent =
+    u.value.length < 4 ? "Min 4 chars" : "";
+};
+
+p.oninput = () => {
+  document.getElementById("pErr").textContent =
+    p.value.length < 6 ? "Min 6 chars" : "";
+};
+</script>
+
+</body>
+</html>

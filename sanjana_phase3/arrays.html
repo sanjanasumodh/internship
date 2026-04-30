@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Display</title>
+</head>
+<body>
+<h2>Item List</h2>
+<ul id="list"></ul>
+<script>
+var items = ["Apple","Grapes", "Orange", "Mango"];
+
+var list = document.getElementById("list");
+
+items.forEach(function(item) {
+    var li = document.createElement("li");
+    li.textContent = item;
+    list.appendChild(li);
+});
+</script>
+
+</body>
+</html>

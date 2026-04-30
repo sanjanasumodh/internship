@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Validation</title>
+    <style>
+        body { font-family: Arial; }
+        .error { color: red; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form id="loginForm">
+    <label>Username:</label><br>
+    <input type="text" id="username"><br>
+    <span id="userError" class="error"></span><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br>
+    <span id="passError" class="error"></span><br><br>
+
+    <button type="submit">Login</button>
+</form>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let username = document.getElementById("username").value.trim();
+    let password = document.getElementById("password").value.trim();
+
+    let valid = true;
+
+    if (username.length < 4) {
+        document.getElementById("userError").textContent = "Username must be at least 4 characters";
+        valid = false;
+    } else {
+        document.getElementById("userError").textContent = "";
+    }
+
+    if (password.length < 6) {
+        document.getElementById("passError").textContent = "Password must be at least 6 characters";
+        valid = false;
+    } else {
+        document.getElementById("passError").textContent = "";
+    }
+
+    if (valid) {
+        alert("Login successful!");
+    }
+});
+</script>
+
+</body>
+</html>
